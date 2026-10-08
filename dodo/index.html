@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>/dodo — съешь пиццу</title>
+<meta name="description" content="Съешь пиццу из восьми кусков и возьми салфетку.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="../assets/dodo.css">
+</head>
+<body>
+
+<div class="frame" aria-hidden="true"></div>
+
+<header class="top">
+  <a class="back" href="../">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+    На главную
+  </a>
+  <p class="slug">/dodo</p>
+  <p class="count" id="count">съедено 0 / 8</p>
+</header>
+
+<main class="stage">
+
+  <div class="copy">
+    <h1 id="head">Опять пицца</h1>
+    <p class="sub" id="sub">Тебе нужно съесть эту пиццу. Один клик — и кусок уходит за три укуса. Съешь все восемь, и я дам тебе салфетку.</p>
+
+    <p class="lbl">прогресс</p>
+    <ul class="pips" id="pips" aria-label="съедено 0 / 8"></ul>
+
+    <button type="button" class="take" id="take" hidden>
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6z"/><path d="M8 6V4m4 2V4m4 2V4M4 11h16"/></svg>
+      Возьми салфетку
+    </button>
+  </div>
+
+  <div class="pizza" id="pizza">
+    <svg id="art" viewBox="0 0 600 600" aria-hidden="true">
+      <defs id="defs"></defs>
+      <circle cx="300" cy="300" r="268" class="plate-dash"/>
+      <circle cx="300" cy="300" r="252" class="plate-line"/>
+      <g id="crumbs"></g>
+      <g id="slices"></g>
+    </svg>
+    <div class="hits" id="hits"></div>
+  </div>
+
+</main>
+
+<div class="veil" id="veil" hidden>
+  <div class="napkin" role="dialog" aria-label="Салфетка" aria-modal="true">
+    <div class="napkin__paper" aria-hidden="true"></div>
+    <div class="napkin__inner" aria-hidden="true"></div>
+    <div class="napkin__text">
+      <p class="napkin__big">Хочу к вам<br>в команду</p>
+      <p class="napkin__sign">— Георгий, Android</p>
+    </div>
+  </div>
+
+  <div class="after">
+    <p class="lbl" id="tick" aria-live="polite">переход на сайт через 3</p>
+    <a class="go" href="../" id="go">
+      Перейти на сайт
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h13m0 0l-6-6m6 6l-6 6"/></svg>
+    </a>
+    <button type="button" class="again" id="again">Ещё пиццу</button>
+  </div>
+</div>
+
+<script src="../assets/dodo.js"></script>
+</body>
+</html>

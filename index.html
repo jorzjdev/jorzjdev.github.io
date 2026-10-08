@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Георгий Шипунов — Senior Android-разработчик</title>
+<meta name="description" content="Senior Android-разработчик, 6+ лет: реальное время, низкие задержки, SDK, безопасность и AI в разработке. Тбилиси, релокация и удалённая работа.">
+<meta property="og:title" content="Георгий Шипунов — Senior Android-разработчик">
+<meta property="og:description" content="6+ лет Android: реальное время, низкие задержки, SDK, MDM и внедрение AI в разработку.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#top">Перейти к содержимому</a>
+
+<header class="bar">
+  <div class="bar__inner">
+    <a class="brand" href="#top">
+      <span class="brand__mono" aria-hidden="true" data-i18n="hero.mono">ГШ</span>
+      <span class="brand__name" data-i18n="hero.name">Георгий Шипунов</span>
+    </a>
+
+    <nav class="nav" aria-label="Разделы сайта" data-i18n-aria="nav.label">
+      <a href="#about" data-i18n="nav.about">Обо мне</a>
+      <a href="#experience" data-i18n="nav.exp">Опыт</a>
+      <a href="#skills" data-i18n="nav.skills">Навыки</a>
+      <a href="#education" data-i18n="nav.edu">Образование</a>
+      <a href="#contact" data-i18n="nav.contact">Контакты</a>
+    </nav>
+
+    <div class="seg" role="group" aria-label="Язык" data-i18n-aria="nav.langLabel">
+      <button type="button" class="seg__btn is-on" data-lang="ru" aria-pressed="true">RU</button>
+      <button type="button" class="seg__btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
+    <a class="btn btn--filled btn--sm bar__cv" href="assets/resume.pdf" data-i18n="btn.resume">Резюме</a>
+
+    <button type="button" class="icon-btn bar__burger" id="menuOpen" aria-label="Открыть меню" data-i18n-aria="btn.menu">
+      <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<dialog class="sheet" id="menu" aria-label="Меню" data-i18n-aria="nav.menuLabel">
+  <div class="sheet__grip" aria-hidden="true"></div>
+  <nav class="sheet__nav" aria-label="Разделы" data-i18n-aria="nav.label">
+    <a href="#about"><span aria-hidden="true">01</span><span data-i18n="nav.about">Обо мне</span></a>
+    <a href="#experience"><span aria-hidden="true">02</span><span data-i18n="nav.exp">Опыт</span></a>
+    <a href="#skills"><span aria-hidden="true">03</span><span data-i18n="nav.skills">Навыки</span></a>
+    <a href="#education"><span aria-hidden="true">04</span><span data-i18n="nav.edu">Образование</span></a>
+    <a href="#contact"><span aria-hidden="true">05</span><span data-i18n="nav.contact">Контакты</span></a>
+  </nav>
+  <a class="btn btn--tonal sheet__egg" href="dodo/"><span aria-hidden="true">++</span> /dodo</a>
+  <button type="button" class="btn btn--outlined sheet__close" id="menuClose" data-i18n="btn.close">Закрыть</button>
+</dialog>
+
+<main id="top">
+
+  <!-- ===== hero ===== -->
+  <section class="hero wrap">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="pill"><span class="pill__dot" aria-hidden="true"></span><span data-i18n="hero.status">открыт к предложениям</span></p>
+        <h1 class="display" data-i18n="hero.name">Георгий Шипунов</h1>
+        <p class="hero__role" data-i18n="hero.role">Senior Android-разработчик</p>
+        <p class="lead" data-i18n="hero.lead">Шесть лет делаю Android-приложения, где всё происходит в реальном времени: мессенджеры, звонки, SDK для сторонних продуктов, касса для сети из 400 магазинов. Работаю в CORE-команде: платформа, безопасность и внедрение AI в разработку.</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--filled" href="mailto:gerasimshogd@gmail.com">
+            <svg class="i" aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M2.5 7l9.5 6.5L21.5 7"/></svg>
+            <span data-i18n="btn.write">Написать на почту</span>
+          </a>
+          <a class="btn btn--tonal" href="https://github.com/jorzjdev" rel="noopener">
+            <svg class="i" aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6-1.5 6-6.6a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.5-.5-4.6 1.7a12.3 12.3 0 0 0-6.6 0C5.3 1.2 3.8 1.7 3.8 1.7a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 2.3 8.9c0 5.1 3 6.3 6 6.6a3.4 3.4 0 0 0-.9 2.6V22"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn--outlined" href="assets/resume.pdf">
+            <svg class="i" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 19h16"/></svg>
+            <span data-i18n="btn.pdf">Скачать PDF</span>
+          </a>
+        </div>
+
+        <p class="hero__place">
+          <svg class="i" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 22s8-5.4 8-12a8 8 0 1 0-16 0c0 6.6 8 12 8 12z"/><circle cx="12" cy="10" r="3"/></svg>
+          <strong data-i18n="hero.place">Тбилиси, Грузия</strong>
+          <span aria-hidden="true">·</span>
+          <span data-i18n="hero.avail">готов к релокации и удалённой работе</span>
+        </p>
+      </div>
+
+      <div class="blob" aria-hidden="true">
+        <span class="blob__mono" data-i18n="hero.mono">ГШ</span>
+        <span class="blob__tag">kotlin · compose · coroutines</span>
+      </div>
+    </div>
+
+    <ul class="metrics">
+      <li class="card"><p class="metrics__v" data-i18n="m1.v">6+</p><p class="metrics__l" data-i18n="m1.l">лет в Android-разработке</p></li>
+      <li class="card"><p class="metrics__v" data-i18n="m2.v">500K+</p><p class="metrics__l" data-i18n="m2.l">загрузок у приложений с моим SDK</p></li>
+      <li class="card"><p class="metrics__v" data-i18n="m3.v">30K</p><p class="metrics__l" data-i18n="m3.l">DAU в чате реального времени</p></li>
+      <li class="card"><p class="metrics__v" data-i18n="m4.v">4 млн</p><p class="metrics__l" data-i18n="m4.l">клиентов кассовой системы</p></li>
+    </ul>
+  </section>
+
+  <!-- ===== about ===== -->
+  <section class="wrap sec" id="about">
+    <p class="kicker" data-i18n="about.kicker">обо мне</p>
+    <h2 class="headline" data-i18n="about.title">Реальное время, высокая нагрузка, безопасность</h2>
+
+    <div class="about">
+      <div class="panel">
+        <p class="about__text" data-i18n="about.text">Senior Android-разработчик с опытом более 6 лет в создании высокопроизводительных мобильных приложений и систем реального времени. Глубокая экспертиза в Kotlin, Coroutines и масштабируемых архитектурах с фокусом на оптимизацию производительности, фоновую обработку и работу с данными при низких задержках. Есть опыт разработки компонентов уровня SDK, повышения стабильности приложений — снижения ANR и крашей — и проектирования эффективных систем для высоконагруженных сред. Работаю в CORE-команде: внедрил MDM, отвечающий за безопасность приложения, и занимаюсь внедрением AI в компании — гайдлайны, мультиагентная разработка и best practices по работе с ИИ.</p>
+      </div>
+
+      <div class="panel panel--accent">
+        <h3 class="title" data-i18n="about.ach">Ключевые достижения</h3>
+        <ul class="ticks">
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach1">Повысил производительность и отзывчивость систем реального времени под высокой нагрузкой</span></li>
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach2">Снизил задержки интерфейса и оптимизировал рендеринг на сложных экранах</span></li>
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach3">Спроектировал архитектуру SDK, используемую в приложениях с более чем 500 000 загрузок</span></li>
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach4">Построил масштабируемые системы обмена сообщениями и обработки данных</span></li>
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach5">Руководил процессом разработки и участвовал в принятии архитектурных решений</span></li>
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach6">Внедрил MDM в CORE-команде — безопасность приложения на уровне платформы</span></li>
+          <li><svg class="tick" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="ach7">Внедрил AI в процессы компании: гайдлайны, мультиагентная разработка, best practices</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== experience ===== -->
+  <section class="wrap sec" id="experience">
+    <p class="kicker" data-i18n="exp.kicker">опыт работы</p>
+    <h2 class="headline" data-i18n="exp.title">Где и что я делал</h2>
+
+    <div class="jobs">
+
+      <article class="card job">
+        <div class="job__head">
+          <h3 class="title" data-i18n="j1.role">Senior Android-разработчик</h3>
+          <span class="chip chip--period" data-i18n="j1.period">2024 — наст. время</span>
+        </div>
+        <p class="job__co" data-i18n="j1.co">DION · CORE-команда</p>
+        <ul class="bullets">
+          <li data-i18n="j1.b1">Работаю в CORE-команде: внедрил MDM, отвечающий за безопасность приложения</li>
+          <li data-i18n="j1.b2">Внедрял AI в компании: гайдлайны по работе с ИИ, мультиагентная разработка, свод best practices для команд</li>
+          <li data-i18n="j1.b3">Руководил разработкой модуля чата реального времени с аудиторией более 30 000 DAU, уделяя особое внимание масштабируемости и обновлениям с низкой задержкой</li>
+          <li data-i18n="j1.b4">Реализовал асинхронные потоки данных на Kotlin Coroutines и Flow для эффективной обработки данных в реальном времени</li>
+          <li data-i18n="j1.b5">Спроектировал и разработал безопасное шифрованное хранилище для файлов и конфиденциальных данных</li>
+          <li data-i18n="j1.b6">Улучшил производительность рендеринга сложного HTML-контента в WebView, устранив несоответствия в интерфейсе</li>
+          <li data-i18n="j1.b7">Работал с фоновой обработкой и lifecycle-aware компонентами для стабильной работы с данными</li>
+          <li data-i18n="j1.b8">Участвовал в межпроектных архитектурных решениях и проектировании систем</li>
+        </ul>
+        <ul class="tags">
+          <li>Kotlin</li><li>Coroutines</li><li>Flow</li><li>MDM</li>
+          <li data-i18n="tag.encstore">Шифрованное хранилище</li><li>WebView</li>
+          <li data-i18n="tag.multiagent">Мультиагентная разработка</li>
+        </ul>
+      </article>
+
+      <article class="card job">
+        <div class="job__head">
+          <h3 class="title" data-i18n="j2.role">Senior Android-разработчик</h3>
+          <span class="chip chip--period">2021 — 2024</span>
+        </div>
+        <p class="job__co" data-i18n="j2.co">SberDevices · мессенджер SaluteJazz</p>
+        <ul class="bullets">
+          <li data-i18n="j2.b1">Разработал функции обмена сообщениями в реальном времени на WebSocket и gRPC</li>
+          <li data-i18n="j2.b2">Спроектировал архитектуру и API уровня SDK для интеграции в сторонние приложения — более 500 000 загрузок</li>
+          <li data-i18n="j2.b3">Оптимизировал производительность чата для высоконагруженных сценариев: плавность прокрутки и отзывчивость</li>
+          <li data-i18n="j2.b4">Снизил потребление памяти и повысил эффективность рендеринга на экранах с большим количеством сообщений</li>
+          <li data-i18n="j2.b5">Реализовал системы локального хранения и управления файлами для эффективной работы с медиа</li>
+          <li data-i18n="j2.b6">Разработал сложные UI-компоненты с акцентом на производительность и плавный пользовательский опыт</li>
+        </ul>
+        <ul class="tags">
+          <li>WebSocket</li><li>gRPC</li><li>SDK API</li><li>Jetpack Compose</li><li>Custom Views</li>
+        </ul>
+      </article>
+
+      <article class="card job">
+        <div class="job__head">
+          <h3 class="title" data-i18n="j3.role">Middle Android-разработчик</h3>
+          <span class="chip chip--period">2021</span>
+        </div>
+        <p class="job__co" data-i18n="j3.co">МойДом</p>
+        <ul class="bullets">
+          <li data-i18n="j3.b1">Разработал мобильную платформу для управления жилищно-коммунальными услугами и операционными процессами</li>
+          <li data-i18n="j3.b2">Реализовал эффективную работу с данными и обновление интерфейса для управления задачами и заявками</li>
+        </ul>
+        <ul class="tags"><li>MVVM</li><li>REST</li><li>Android SDK</li></ul>
+      </article>
+
+      <article class="card job">
+        <div class="job__head">
+          <h3 class="title" data-i18n="j4.role">Junior / Middle Android-разработчик</h3>
+          <span class="chip chip--period">2019 — 2021</span>
+        </div>
+        <p class="job__co">vvdev</p>
+        <ul class="bullets">
+          <li data-i18n="j4.b1">Разработал несколько Android-приложений с нуля в разных предметных областях</li>
+          <li data-i18n="j4.b2">Работал с Bluetooth, NFC и интеграциями на уровне устройств</li>
+          <li data-i18n="j4.b3">Построил кассовую систему, используемую в 400 магазинах и обслуживающую более 4 млн клиентов</li>
+          <li data-i18n="j4.b4">Получил опыт оптимизации производительности и полного цикла мобильной разработки</li>
+        </ul>
+        <ul class="tags"><li>Bluetooth</li><li>NFC</li><li>Java</li><li>Android SDK</li></ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== skills ===== -->
+  <section class="wrap sec" id="skills">
+    <p class="kicker" data-i18n="skills.kicker">технические навыки</p>
+    <h2 class="headline" data-i18n="skills.title">Стек</h2>
+
+    <div class="stack">
+      <div class="stack__g">
+        <h3><span aria-hidden="true">01</span><span data-i18n="g1">Языки</span></h3>
+        <ul><li>Kotlin</li><li>Java</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">02</span><span data-i18n="g2">Android</span></h3>
+        <ul><li>Android SDK</li><li>Jetpack Compose</li><li>Custom Views</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">03</span><span data-i18n="g3">Архитектура</span></h3>
+        <ul><li>MVVM</li><li>MVI</li><li>Clean Architecture</li><li data-i18n="s.modular">Модуляризация</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">04</span><span data-i18n="g4">Многопоточность</span></h3>
+        <ul><li>Kotlin Coroutines</li><li>Flow</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">05</span><span data-i18n="g5">Сеть</span></h3>
+        <ul><li>REST</li><li>WebSocket</li><li>gRPC</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">06</span><span data-i18n="g6">Производительность</span></h3>
+        <ul><li data-i18n="s.ui">Оптимизация UI</li><li data-i18n="s.mem">Управление памятью</li><li data-i18n="s.render">Рендеринг</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">07</span><span data-i18n="g7">Данные</span></h3>
+        <ul><li>SQL</li><li data-i18n="s.cache">Локальное кэширование</li><li data-i18n="s.files">Файловое хранение</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">08</span><span data-i18n="g8">Безопасность</span></h3>
+        <ul><li>MDM</li><li data-i18n="tag.encstore">Шифрованное хранилище</li><li data-i18n="s.dataprot">Защита данных</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">09</span><span data-i18n="g9">AI в разработке</span></h3>
+        <ul><li>ChatGPT</li><li>Claude</li><li>GitHub Copilot</li><li data-i18n="s.guides">Гайдлайны</li><li data-i18n="tag.multiagent">Мультиагентная разработка</li><li>Best practices</li></ul>
+      </div>
+      <div class="stack__g">
+        <h3><span aria-hidden="true">10</span><span data-i18n="g10">Прочее</span></h3>
+        <ul><li>Firebase Cloud Messaging</li><li>Git</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== education ===== -->
+  <section class="wrap sec" id="education">
+    <p class="kicker" data-i18n="edu.kicker">образование</p>
+    <h2 class="headline" data-i18n="edu.title">Учёба и языки</h2>
+
+    <div class="edu">
+      <div class="edu__list">
+        <article class="card edu__item">
+          <div class="edu__head">
+            <h3 class="title title--s" data-i18n="e1.t">Бакалавр — «Вычислительная техника»</h3>
+            <span class="mono-s">2017 — 2021</span>
+          </div>
+          <p class="edu__place" data-i18n="e1.p">НГТУ им. Р. Е. Алексеева</p>
+        </article>
+        <article class="card edu__item">
+          <div class="edu__head">
+            <h3 class="title title--s" data-i18n="e2.t">Курс «Android-разработчик»</h3>
+            <span class="mono-s">2022 — 2023</span>
+          </div>
+          <p class="edu__place">OTUS</p>
+        </article>
+      </div>
+
+      <div class="panel panel--cool">
+        <h3 class="title title--s" data-i18n="edu.langs">Языки</h3>
+        <ul class="langs">
+          <li><span data-i18n="l1.n">Русский</span><span class="mono-s" data-i18n="l1.v">родной</span></li>
+          <li><span data-i18n="l2.n">Английский</span><span class="mono-s">B2</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== contact ===== -->
+  <section class="wrap sec sec--last" id="contact">
+    <div class="contact">
+      <p class="kicker kicker--on" data-i18n="contact.kicker">контакты</p>
+      <h2 class="headline headline--on" data-i18n="contact.title">Хочу в команду Dodo</h2>
+      <p class="contact__text" data-i18n="contact.text">Реальное время, высокая нагрузка и розница в масштабе — это ровно то, чем я занимался последние шесть лет: от чата на 30 000 DAU до кассы в 400 магазинах. Готов к релокации или удалённой работе, отвечаю в течение дня.</p>
+
+      <ul class="links">
+        <li><a href="mailto:gerasimshogd@gmail.com"><span class="links__k">Email</span><span class="links__v">gerasimshogd@gmail.com</span></a></li>
+        <li><a href="https://t.me/jorzj" rel="noopener"><span class="links__k">Telegram</span><span class="links__v">@jorzj</span></a></li>
+        <li><a href="https://github.com/jorzjdev" rel="noopener"><span class="links__k">GitHub</span><span class="links__v">github.com/jorzjdev</span></a></li>
+        <li><a href="#contact" data-link="linkedin"><span class="links__k">LinkedIn</span><span class="links__v" data-i18n="todo">[добавить ссылку]</span></a></li>
+        <li><a href="#contact" data-link="leetcode"><span class="links__k">LeetCode</span><span class="links__v" data-i18n="todo">[добавить ссылку]</span></a></li>
+      </ul>
+
+      <p class="contact__note" data-i18n="contact.note">Телефон и дополнительные детали — по запросу в переписке.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__inner">
+    <p class="mono-s" data-i18n="foot.built">Собрано вручную · GitHub Pages</p>
+    <p class="foot__right">
+      <a class="foot__egg" href="dodo/">/dodo</a>
+      <span class="mono-s">2026</span>
+    </p>
+  </div>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
