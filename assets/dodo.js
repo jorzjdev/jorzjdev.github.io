@@ -248,7 +248,7 @@
     if (raf !== null) { cancelAnimationFrame(raf); raf = null; }
     veilEl.hidden = true;
     takeEl.hidden = true;
-    subEl.textContent = 'Тебе нужно съесть эту пиццу. Один клик — и кусок уходит за три укуса. Съешь все восемь, и я дам тебе салфетку.';
+    subEl.textContent = 'Съешь пиццу.';
     headEl.textContent = 'Опять пицца';
     countEl.textContent = 'съедено 0 / 8';
     paintCrumbs(0);
