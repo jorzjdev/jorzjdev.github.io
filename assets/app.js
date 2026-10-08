@@ -34,6 +34,11 @@
     if (dict['doc.title']) { document.title = dict['doc.title']; }
     document.documentElement.lang = lang;
 
+    // Резюме отдаём на языке страницы: два отдельных PDF
+    [].forEach.call(document.querySelectorAll('[data-cv]'), function (a) {
+      a.setAttribute('href', 'assets/resume-' + lang + '.pdf');
+    });
+
     [].forEach.call(document.querySelectorAll('.seg__btn'), function (b) {
       var on = b.getAttribute('data-lang') === lang;
       b.classList.toggle('is-on', on);
