@@ -117,10 +117,9 @@ window.I18N_EN = {
   'l2.n': 'English',
 
   'contact.kicker': 'contact',
-  'contact.title': 'I want to join Dodo',
+  'contact.title': 'I want to join your team',
   'contact.text': 'Real time, high load and retail at scale — that is exactly what I have been doing for the past six years: from a chat module with 30,000 DAU to a POS system in 400 stores. Open to relocation or remote, I usually reply within a day.',
   'contact.note': 'Phone number and further details on request.',
-  'todo': '[add link]',
 
   'foot.built': 'Handcrafted · GitHub Pages'
 };
